@@ -1,0 +1,267 @@
+{
+  "synthetic_only": true,
+  "schema_version": "1.0",
+  "snapshot_id": "DOCUMENT-DEMO-001",
+  "as_of_date": "2027-01-01",
+  "currency": "USD",
+  "row_counts": {
+    "documents": 6,
+    "revisions": 8,
+    "jobs": 7,
+    "vendors": 3,
+    "cost_centers": 3,
+    "invoice_lines": 13
+  },
+  "sha256": {
+    "documents.csv": "0a66ad700de18fcf3895f71d9ca89f5fb314bb4205eb2c113ebfea456a556ede",
+    "revisions.csv": "be52dbfabd35486df8d45296bd031b07a0dd1a6317e3859df096bbb2b90570b9",
+    "jobs.csv": "2a7ccb7253e7cfb16712f3080400d5ae71b22db7535475676abfd676e37a5d4b",
+    "vendors.csv": "6f911c8aa95803ac57ca5ca4d7234d9c34582d17ba90a15968db96232e5ed982",
+    "cost_centers.csv": "836bcb695da0d3021e28384d6f8545611df72af68b2fa0231965d99539fe57e8",
+    "invoice_lines.csv": "849fe92ef4e2b8c08f7ea9df403bfd59fd5769d5e0a427aae947fb3673f00374"
+  },
+  "expected": {
+    "invoice_disposition": [
+      {
+        "source_line_id": "L001",
+        "vendor_id": "V001",
+        "invoice_id": "INV100",
+        "line_number": "1",
+        "job_id": "J001",
+        "amount": "2100.00",
+        "currency": "USD",
+        "parsed_amount": "2100.00",
+        "disposition": "Matched",
+        "reason": "OK"
+      },
+      {
+        "source_line_id": "L002",
+        "vendor_id": "V001",
+        "invoice_id": "INV100",
+        "line_number": "2",
+        "job_id": "J003",
+        "amount": "3200.00",
+        "currency": "USD",
+        "parsed_amount": "3200.00",
+        "disposition": "Matched",
+        "reason": "OK"
+      },
+      {
+        "source_line_id": "L003",
+        "vendor_id": "V002",
+        "invoice_id": "INV200",
+        "line_number": "1",
+        "job_id": "J002",
+        "amount": "250.00",
+        "currency": "USD",
+        "parsed_amount": "250.00",
+        "disposition": "Matched",
+        "reason": "OK"
+      },
+      {
+        "source_line_id": "L004",
+        "vendor_id": "V002",
+        "invoice_id": "INV200",
+        "line_number": "2",
+        "job_id": "J004",
+        "amount": "125.00",
+        "currency": "USD",
+        "parsed_amount": "125.00",
+        "disposition": "Matched",
+        "reason": "OK"
+      },
+      {
+        "source_line_id": "L005",
+        "vendor_id": "V001",
+        "invoice_id": "INV101",
+        "line_number": "1",
+        "job_id": "J005",
+        "amount": "1000.00",
+        "currency": "USD",
+        "parsed_amount": "1000.00",
+        "disposition": "Matched",
+        "reason": "OK"
+      },
+      {
+        "source_line_id": "L006",
+        "vendor_id": "V003",
+        "invoice_id": "INV300",
+        "line_number": "1",
+        "job_id": "J007",
+        "amount": "1800.00",
+        "currency": "USD",
+        "parsed_amount": "1800.00",
+        "disposition": "Matched",
+        "reason": "OK"
+      },
+      {
+        "source_line_id": "L007",
+        "vendor_id": "V001",
+        "invoice_id": "CREDIT100",
+        "line_number": "1",
+        "job_id": "J001",
+        "amount": "-100.00",
+        "currency": "USD",
+        "parsed_amount": "-100.00",
+        "disposition": "Matched",
+        "reason": "OK"
+      },
+      {
+        "source_line_id": "L008",
+        "vendor_id": "V003",
+        "invoice_id": "INV301",
+        "line_number": "1",
+        "job_id": "J999",
+        "amount": "400.00",
+        "currency": "USD",
+        "parsed_amount": "400.00",
+        "disposition": "Unmatched",
+        "reason": "UNKNOWN_JOB"
+      },
+      {
+        "source_line_id": "L009",
+        "vendor_id": "V001",
+        "invoice_id": "INV100",
+        "line_number": "1",
+        "job_id": "J001",
+        "amount": "2100.00",
+        "currency": "USD",
+        "parsed_amount": "2100.00",
+        "disposition": "Rejected",
+        "reason": "DUPLICATE_LINE"
+      },
+      {
+        "source_line_id": "L010",
+        "vendor_id": "V002",
+        "invoice_id": "INV201",
+        "line_number": "1",
+        "job_id": "J002",
+        "amount": "NOT-A-NUMBER",
+        "currency": "USD",
+        "parsed_amount": null,
+        "disposition": "Rejected",
+        "reason": "INVALID_AMOUNT"
+      },
+      {
+        "source_line_id": "L011",
+        "vendor_id": "V001",
+        "invoice_id": "INV102",
+        "line_number": "1",
+        "job_id": "J003",
+        "amount": "50.00",
+        "currency": "USD",
+        "parsed_amount": "50.00",
+        "disposition": "Matched",
+        "reason": "OK"
+      },
+      {
+        "source_line_id": "L012",
+        "vendor_id": "V003",
+        "invoice_id": "INV302",
+        "line_number": "1",
+        "job_id": "J006",
+        "amount": "300.00",
+        "currency": "USD",
+        "parsed_amount": "300.00",
+        "disposition": "Matched",
+        "reason": "OK"
+      },
+      {
+        "source_line_id": "L013",
+        "vendor_id": "V003",
+        "invoice_id": "INV303",
+        "line_number": "1",
+        "job_id": "J001",
+        "amount": "80.00",
+        "currency": "USD",
+        "parsed_amount": "80.00",
+        "disposition": "Unmatched",
+        "reason": "VENDOR_MISMATCH"
+      }
+    ],
+    "job_cost": [
+      {
+        "job_id": "J001",
+        "revision_id": "R002",
+        "vendor_id": "V001",
+        "cost_center_id": "CC001",
+        "production_date": "2026-12-16",
+        "quantity": "1000",
+        "expected_cost": "2000.00",
+        "actual_cost": "2000.00",
+        "variance": "0.00"
+      },
+      {
+        "job_id": "J002",
+        "revision_id": "R003",
+        "vendor_id": "V002",
+        "cost_center_id": "CC002",
+        "production_date": "2026-09-01",
+        "quantity": "5000",
+        "expected_cost": "250.00",
+        "actual_cost": "250.00",
+        "variance": "0.00"
+      },
+      {
+        "job_id": "J003",
+        "revision_id": "R004",
+        "vendor_id": "V001",
+        "cost_center_id": "CC001",
+        "production_date": "2026-09-01",
+        "quantity": "2000",
+        "expected_cost": "3000.00",
+        "actual_cost": "3250.00",
+        "variance": "250.00"
+      },
+      {
+        "job_id": "J004",
+        "revision_id": "R005",
+        "vendor_id": "V002",
+        "cost_center_id": "CC003",
+        "production_date": "2026-09-01",
+        "quantity": "1000",
+        "expected_cost": "100.00",
+        "actual_cost": "125.00",
+        "variance": "25.00"
+      },
+      {
+        "job_id": "J005",
+        "revision_id": "R001",
+        "vendor_id": "V001",
+        "cost_center_id": "CC001",
+        "production_date": "2025-06-01",
+        "quantity": "500",
+        "expected_cost": "1000.00",
+        "actual_cost": "1000.00",
+        "variance": "0.00"
+      },
+      {
+        "job_id": "J006",
+        "revision_id": "R007",
+        "vendor_id": "V003",
+        "cost_center_id": "CC001",
+        "production_date": "2027-01-10",
+        "quantity": "100",
+        "expected_cost": "300.00",
+        "actual_cost": "300.00",
+        "variance": "0.00"
+      },
+      {
+        "job_id": "J007",
+        "revision_id": "R004",
+        "vendor_id": "V003",
+        "cost_center_id": "CC001",
+        "production_date": "2026-09-02",
+        "quantity": "1000",
+        "expected_cost": "1800.00",
+        "actual_cost": "1800.00",
+        "variance": "0.00"
+      }
+    ],
+    "totals": {
+      "Matched": "8725.00",
+      "Unmatched": "480.00",
+      "Rejected": "2100.00"
+    }
+  }
+}

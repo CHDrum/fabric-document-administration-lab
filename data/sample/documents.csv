@@ -1,0 +1,7 @@
+document_id,title,owner,business_status,document_type
+D001,Synthetic welcome kit,Member Operations,Active,Member communication
+D002,Synthetic explanation of benefits,Claims,Active,Claims communication
+D003,Synthetic enrollment guide,Benefits,Active,Enrollment communication
+D004,Synthetic provider notice,Provider Communications,Active,Provider communication
+D005,Synthetic retired form,Records,Archived,Form
+D006,Synthetic renewal packet,,Proposed,Member communication

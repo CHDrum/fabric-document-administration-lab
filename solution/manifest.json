@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "synthetic_only": true,
+  "workspace_name": "Fabric-Document-Administration-Demo",
+  "capacity_id": "SELECT_YOUR_APPROVED_CAPACITY",
+  "foundation_items": [
+    {"displayName": "DocumentLanding", "type": "Lakehouse", "description": "Synthetic document administration source snapshots."},
+    {"displayName": "DocumentProducts", "type": "Warehouse", "description": "Synthetic document catalog and reconciled financial data products."}
+  ],
+  "pipeline_name": "DocumentIngestion",
+  "semantic_model_name": "DocumentAnalytics",
+  "report_name": "Fabric Document Administration",
+  "source_folder": "Files/document-demo/DOCUMENT-DEMO-001",
+  "publication_procedure": "dbo.publish_document_products",
+  "snapshot_id": "DOCUMENT-DEMO-001",
+  "as_of_date": "2027-01-01",
+  "deployment_status": "portable_template_not_deployed"
+}

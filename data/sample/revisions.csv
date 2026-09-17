@@ -1,0 +1,9 @@
+revision_id,document_id,revision_number,revision_status,effective_date,end_date,publication_date,channel
+R001,D001,1,Retired,2025-01-01,2026-12-31,2024-12-15,Print
+R002,D001,2,Published,2027-01-01,,2026-12-15,Print
+R003,D002,1,Published,2026-01-01,,2025-12-15,Digital
+R004,D003,1,Published,2026-01-01,,2025-12-15,Print
+R005,D004,1,Published,2026-01-01,,2025-12-15,Digital
+R006,D005,1,Archived,2025-01-01,2025-12-31,2024-12-15,Print
+R007,D006,1,Draft,2027-02-01,,,Print
+R008,D003,2,Draft,2027-02-01,,,Digital
